@@ -1,2 +1,3 @@
 # Papers Of Interest
-Feel free to link to a paper of interest - Typical Deep learning methods and relevant applications.
+
+![In Defense of the Triplet Loss for Person Re-Identification][https://arxiv.org/abs/1703.07737]
