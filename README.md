@@ -1,15 +1,8 @@
 # Papers Of Interest
 
-[In Defense of the Triplet Loss for Person Re-Identification](https://arxiv.org/abs/1703.07737)
-```
-In the past few years, the field of computer vision has gone through a revolution fueled mainly by the advent
-of large datasets and the adoption of deep convolutional neural networks for end-to-end learning. 
-The person re-identification subfield is no exception to this. Unfortunately, a prevailing belief in the community
-seems to be that the triplet loss is inferior to using surrogate losses (classification, verification) 
-followed by a separate metric learning step. We show that, for models trained from scratch as well as pretrained ones, 
-using a variant of the triplet loss to perform end-to-end deep metric learning outperforms most other published 
-methods by a large margin.
-```
+
+## GANs
+
 [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/abs/1703.10593)
 
 ```
@@ -24,23 +17,7 @@ transfiguration, season transfer, photo enhancement, etc. Quantitative compariso
 the superiority of our approach.
 ```
 
-[Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer](https://arxiv.org/abs/1701.06538)
-
-```
-The capacity of a neural network to absorb information is limited by its number of parameters. Conditional computation, 
-where parts of the network are active on a per-example basis, has been proposed in theory as a way of dramatically 
-increasing model capacity without a proportional increase in computation. In practice, however, there are significant 
-algorithmic and performance challenges. In this work, we address these challenges and finally realize the promise of 
-conditional computation, achieving greater than 1000x improvements in model capacity with only minor losses in computational
-efficiency on modern GPU clusters. We introduce a Sparsely-Gated Mixture-of-Experts layer (MoE), consisting of up to 
-thousands of feed-forward sub-networks. A trainable gating network determines a sparse combination of these experts to use 
-for each example. We apply the MoE to the tasks of language modeling and machine translation, where model capacity is 
-critical for absorbing the vast quantities of knowledge available in the training corpora. We present model architectures in 
-which a MoE with up to 137 billion parameters is applied convolutionally between stacked LSTM layers. On large language 
-modeling and machine translation benchmarks, these models achieve significantly better results than state-of-the-art at 
-lower computational cost.
-```
-
+## Applied
 [Predicting multicellular function through multi-layer tissue networks](https://arxiv.org/abs/1707.04638)
 
 ```
@@ -60,18 +37,7 @@ effectively transfer cellular functions to a functionally uncharacterized tissue
 to multiscale models able to predict a range of phenotypes spanning cellular subsystems
 ```
 
-[Pixel Recursive Super Resolution](https://arxiv.org/abs/1702.00783)
-```
-We present a pixel recursive super resolution model that synthesizes realistic details into images while enhancing their 
-resolution. A low resolution image may correspond to multiple plausible high resolution images, thus modeling the super 
-resolution process with a pixel independent conditional model often results in averaging different details--hence blurry 
-edges. By contrast, our model is able to represent a multimodal conditional distribution by properly modeling the 
-statistical dependencies among the high resolution image pixels, conditioned on a low resolution input. We employ a PixelCNN 
-architecture to define a strong prior over natural images and jointly optimize this prior with a deep conditioning 
-convolutional network. Human evaluations indicate that samples from our proposed model look more photo realistic than a 
-strong L2 regression baseline.
-```
-
+## Unsupervised / AE
 [VAE with a VampPrior](https://arxiv.org/abs/1705.07120)
 ```
 Many different methods to train deep generative models have been introduced in the past. In this paper, we propose to extend
@@ -85,6 +51,8 @@ and Histopathology patches, and show that applying the hierarchical VampPrior de
 datasets in the unsupervised permutation invariant setting and the best results or comparable to SOTA methods for the 
 approach with convolutional networks.
 ```
+
+## Advice
 [A DISCIPLINED APPROACH TO NEURAL NETWORK HYPER-PARAMETERS: PART 1 – LEARNING RATE, BATCH SIZE, MOMENTUM, AND WEIGHT DECAY](https://arxiv.org/abs/1803.09820)
 
 ```
@@ -99,3 +67,45 @@ each dataset and architecture. Weight decay is used as a sample regularizer to s
 with the learning rates and momentums.
 ```
 
+## Misc
+
+
+[In Defense of the Triplet Loss for Person Re-Identification](https://arxiv.org/abs/1703.07737)
+```
+In the past few years, the field of computer vision has gone through a revolution fueled mainly by the advent
+of large datasets and the adoption of deep convolutional neural networks for end-to-end learning. 
+The person re-identification subfield is no exception to this. Unfortunately, a prevailing belief in the community
+seems to be that the triplet loss is inferior to using surrogate losses (classification, verification) 
+followed by a separate metric learning step. We show that, for models trained from scratch as well as pretrained ones, 
+using a variant of the triplet loss to perform end-to-end deep metric learning outperforms most other published 
+methods by a large margin.
+```
+
+[Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer](https://arxiv.org/abs/1701.06538)
+
+```
+The capacity of a neural network to absorb information is limited by its number of parameters. Conditional computation, 
+where parts of the network are active on a per-example basis, has been proposed in theory as a way of dramatically 
+increasing model capacity without a proportional increase in computation. In practice, however, there are significant 
+algorithmic and performance challenges. In this work, we address these challenges and finally realize the promise of 
+conditional computation, achieving greater than 1000x improvements in model capacity with only minor losses in computational
+efficiency on modern GPU clusters. We introduce a Sparsely-Gated Mixture-of-Experts layer (MoE), consisting of up to 
+thousands of feed-forward sub-networks. A trainable gating network determines a sparse combination of these experts to use 
+for each example. We apply the MoE to the tasks of language modeling and machine translation, where model capacity is 
+critical for absorbing the vast quantities of knowledge available in the training corpora. We present model architectures in 
+which a MoE with up to 137 billion parameters is applied convolutionally between stacked LSTM layers. On large language 
+modeling and machine translation benchmarks, these models achieve significantly better results than state-of-the-art at 
+lower computational cost.
+```
+
+[Pixel Recursive Super Resolution](https://arxiv.org/abs/1702.00783)
+```
+We present a pixel recursive super resolution model that synthesizes realistic details into images while enhancing their 
+resolution. A low resolution image may correspond to multiple plausible high resolution images, thus modeling the super 
+resolution process with a pixel independent conditional model often results in averaging different details--hence blurry 
+edges. By contrast, our model is able to represent a multimodal conditional distribution by properly modeling the 
+statistical dependencies among the high resolution image pixels, conditioned on a low resolution input. We employ a PixelCNN 
+architecture to define a strong prior over natural images and jointly optimize this prior with a deep conditioning 
+convolutional network. Human evaluations indicate that samples from our proposed model look more photo realistic than a 
+strong L2 regression baseline.
+```
