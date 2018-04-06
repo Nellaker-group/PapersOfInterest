@@ -1,3 +1,6 @@
 # Papers Of Interest
 
-![In Defense of the Triplet Loss for Person Re-Identification](https://arxiv.org/abs/1703.07737)
+[In Defense of the Triplet Loss for Person Re-Identification](https://arxiv.org/abs/1703.07737)
+```
+In the past few years, the field of computer vision has gone through a revolution fueled mainly by the advent of large datasets and the adoption of deep convolutional neural networks for end-to-end learning. The person re-identification subfield is no exception to this. Unfortunately, a prevailing belief in the community seems to be that the triplet loss is inferior to using surrogate losses (classification, verification) followed by a separate metric learning step. We show that, for models trained from scratch as well as pretrained ones, using a variant of the triplet loss to perform end-to-end deep metric learning outperforms most other published methods by a large margin.
+```
