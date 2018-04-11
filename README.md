@@ -80,6 +80,22 @@ each dataset and architecture. Weight decay is used as a sample regularizer to s
 with the learning rates and momentums.
 ```
 
+## Genetics / Genomics
+
+[A Likelihood-Free Inference Framework for Population Genetic Data using Exchangeable Neural Networks](https://arxiv.org/abs/1802.06153)
+
+```
+Inference for population genetics models is hindered by computationally intractable likelihoods. While this issue is tackled
+by likelihood-free methods, these approaches typically rely on hand-crafted summary statistics of the data. In complex 
+settings, designing and selecting suitable summary statistics is problematic and results are very sensitive to such choices. 
+In this paper, we learn the first exchangeable feature representation for population genetic data to work directly with 
+genotype data. This is achieved by means of a novel Bayesian likelihood-free inference framework, where a permutation-
+invariant convolutional neural network learns the inverse functional relationship from the data to the posterior. We 
+leverage access to scientific simulators to learn such likelihood-free function mappings, and establish a general framework 
+for inference in a variety of simulation-based tasks. We demonstrate the power of our method on the recombination hotspot 
+testing problem, outperforming the state-of-the-art.
+```
+
 ## Misc
 
 
