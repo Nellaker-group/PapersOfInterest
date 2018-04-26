@@ -51,33 +51,25 @@ to multiscale models able to predict a range of phenotypes spanning cellular sub
 ```
 
 ## Unsupervised / AE
-[VAE with a VampPrior](https://arxiv.org/abs/1705.07120)
-```
-Many different methods to train deep generative models have been introduced in the past. In this paper, we propose to extend
-the variational auto-encoder (VAE) framework with a new type of prior which we call "Variational Mixture of Posteriors" 
-prior, or VampPrior for short. The VampPrior consists of a mixture distribution (e.g., a mixture of Gaussians) with 
-components given by variational posteriors conditioned on learnable pseudo-inputs. We further extend this prior to a two 
-layer hierarchical model and show that this architecture with a coupled prior and posterior, learns significantly better 
-models. The model also avoids the usual local optima issues related to useless latent dimensions that plague VAEs. We 
-provide empirical studies on six datasets, namely, static and binary MNIST, OMNIGLOT, Caltech 101 Silhouettes, Frey Faces 
-and Histopathology patches, and show that applying the hierarchical VampPrior delivers state-of-the-art results on all 
-datasets in the unsupervised permutation invariant setting and the best results or comparable to SOTA methods for the 
-approach with convolutional networks.
+[$\beta$-VAE](https://openreview.net/references/pdf?id=Sy2fzU9gl)
 ```
 
 ## Advice
 [A DISCIPLINED APPROACH TO NEURAL NETWORK HYPER-PARAMETERS: PART 1 – LEARNING RATE, BATCH SIZE, MOMENTUM, AND WEIGHT DECAY](https://arxiv.org/abs/1803.09820)
 
 ```
-Although deep learning has produced dazzling successes for applications of image, speech, and video processing in the past 
-few years, most trainings are with suboptimal hyper-parameters, requiring unnecessarily long training times. Setting the 
-hyper-parameters remains a black art that requires years of experience to acquire. This report proposes several efficient 
-ways to set the hyper-parameters that significantly reduce training time and improves performance. Specifically, this report 
-shows how to examine the training validation/test loss function for subtle clues of underfitting and overfitting and 
-suggests guidelines for moving toward the optimal balance point. Then it discusses how to increase/decrease the learning 
-rate/momentum to speed up training. Our experiments show that it is crucial to balance every manner of regularization for 
-each dataset and architecture. Weight decay is used as a sample regularizer to show how its optimal value is tightly coupled
-with the learning rates and momentums.
+Learning an interpretable factorised representation of the independent data generative factors of the world without 
+supervision is an important precursor for the development of artificial intelligence that is able to learn and reason in the 
+same way that humans do. We introduce beta-VAE, a new state-of-the-art framework for automated discovery of interpretable 
+factorised latent representations from raw image data in a completely unsupervised manner. Our approach is a modification of 
+the variational autoencoder (VAE) framework. We introduce an adjustable hyperparameter beta that balances latent channel 
+capacity and independence constraints with reconstruction accuracy. We demonstrate that beta-VAE with appropriately tuned
+beta > 1 qualitatively outperforms VAE (beta = 1), as well as state of the art unsupervised (InfoGAN) and semi-supervised (DC-
+IGN) approaches to disentangled factor learning on a variety of datasets (celebA, faces and chairs). Furthermore, we devise a
+protocol to quantitatively compare the degree of disentanglement learnt by different models, and show that our approach also 
+significantly outperforms all baselines quantitatively. Unlike InfoGAN, beta-VAE is stable to train, makes few assumptions 
+about the data and relies on tuning a single hyperparameter, which can be directly optimised through a hyper parameter search 
+using weakly labelled data or through heuristic visual inspection for purely unsupervised data.
 ```
 
 ## Genetics / Genomics
