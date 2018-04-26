@@ -51,7 +51,7 @@ to multiscale models able to predict a range of phenotypes spanning cellular sub
 ```
 
 ## Unsupervised / AE
-[$\beta$-VAE](https://openreview.net/references/pdf?id=Sy2fzU9gl)
+[\beta-VAE](https://openreview.net/references/pdf?id=Sy2fzU9gl)
 ```
 
 ## Advice
