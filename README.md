@@ -50,9 +50,12 @@ effectively transfer cellular functions to a functionally uncharacterized tissue
 to multiscale models able to predict a range of phenotypes spanning cellular subsystems
 ```
 
+
 ## Unsupervised / AE
 [\beta-VAE](https://openreview.net/references/pdf?id=Sy2fzU9gl)
 ```
+```
+
 
 ## Advice
 [A DISCIPLINED APPROACH TO NEURAL NETWORK HYPER-PARAMETERS: PART 1 – LEARNING RATE, BATCH SIZE, MOMENTUM, AND WEIGHT DECAY](https://arxiv.org/abs/1803.09820)
@@ -90,6 +93,18 @@ testing problem, outperforming the state-of-the-art.
 
 ## Misc
 
+[SEMI-SUPERVISED CLASSIFICATION WITH GRAPH CONVOLUTIONAL NETWORKS](https://arxiv.org/pdf/1609.02907.pdf)
+```
+We present a scalable approach for semi-supervised learning on graph-structured
+data that is based on an efficient variant of convolutional neural networks which
+operate directly on graphs. We motivate the choice of our convolutional architecture
+via a localized first-order approximation of spectral graph convolutions.
+Our model scales linearly in the number of graph edges and learns hidden layer
+representations that encode both local graph structure and features of nodes. In
+a number of experiments on citation networks and on a knowledge graph dataset
+we demonstrate that our approach outperforms related methods by a significant
+margin.
+```
 
 [In Defense of the Triplet Loss for Person Re-Identification](https://arxiv.org/abs/1703.07737)
 ```
